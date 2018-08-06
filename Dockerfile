@@ -1,2 +1,3 @@
-FROM elasticsearch:2.3
-RUN bin/plugin install analysis-kuromoji
+FROM elasticsearch:5.5
+
+RUN bin/elasticsearch-plugin install analysis-kuromoji
